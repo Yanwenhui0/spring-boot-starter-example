@@ -12,6 +12,18 @@
         <module>spring-boot-starter-example-zookeeper</module>
     </modules>
 
+    <!-- 发布项目到 Nexus -->
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://47.113.199.232/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://47.113.199.232/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.ywh</groupId>
